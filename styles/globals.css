@@ -15,3 +15,19 @@ a {
 * {
     box-sizing: border-box;
 }
+
+.step-number {
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.input-text {
+    @apply mt-1 block w-60 px-3 py-2 bg-white border-slate-300 rounded-full text-sm shadow-sm placeholder-slate-500;
+    @apply focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-orange-500;
+}

@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import data from '../api/data';
 import Format from '../../layout/format';
 import Image from 'next/image';
+import Related from '../../components/related';
 
 export default function Recipe() {
     const router = useRouter();
@@ -22,6 +23,8 @@ export default function Recipe() {
         }
     }
 
+    const directions = recipe.directions.split(';');
+
     return (
         <Format>
             <div>
@@ -36,15 +39,29 @@ export default function Recipe() {
                             </p>
                             <div className="py-10 justify-center">
                                 <div className="flex justify-center"></div>
-                                <Image src={recipe.img} width={900} height={600} alt=""/>
+                                <Image src={recipe.img} width={900} height={600} alt="" />
                             </div>
                             <div className="content text-gray-600 text-lg flex-col gap-4 pb-10 border-b-2 border-gray-500">
                                 <p>{recipe.description}</p>
                             </div>
+                            <div className="content text-gray-600 text-lg flex-col gap-4 pt-4 pb-10 border-b-2 border-gray-500">
+                                <h2 className="font-bold text-black text-xl pt-1 pb-2">Directions</h2>
+                                <ol className="pl-6 text-md">
+                                    {directions.map((step, index) => (
+                                        <li key={index} className="py-2">
+                                            <span className="step-number">{index + 1}</span>
+                                            {step}
+                                        </li>
+                                    ))}
+                                </ol>
+                            </div>
+                            <div className="">
+                                <Related />
+                            </div>
                         </div>
                     </div>
                     <div className="w-full md:w-1/4 mt-8 md:mt-0 px-2">
-                        <div className="pb-5 py-12">
+                        <div className="pb-5 py-12 bg-white rounded shadow p-4">
                             <h1 className="font-bold text-2xl pb-2 border-b-2 border-gray-500 -mt-8">
                                 Ingredients
                             </h1>

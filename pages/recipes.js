@@ -1,9 +1,10 @@
 import Format from '../layout/format'
+import All from '../components/all'
 
 export default function Home() {
-  return (
-    <Format>
-      <div>Recipes</div>
-    </Format>
-  )
+    return (
+        <Format>
+            <All />
+        </Format>
+    )
 }
