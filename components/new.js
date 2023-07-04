@@ -61,7 +61,7 @@ const RecipesSlider = () => {
         <div className="flex items-center">
           <div className="w-12 h-12 mr-2">
             <Image
-              src="/../public/images/simple-vegetarian-logo.png"
+              src="/images/simple-vegetarian-logo.png"
               alt="Logo"
               layout="responsive"
               width={48}

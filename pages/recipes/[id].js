@@ -12,7 +12,7 @@ export default function Recipe() {
     const recipe = data.Posts.find((recipe) => recipe.id === Number(id));
 
     if (!recipe) {
-        return <div>Recipe not found</div>;
+        return <div>Loading...</div>;
     }
 
     const ingredients = [];
