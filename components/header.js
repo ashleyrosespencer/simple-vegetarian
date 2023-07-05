@@ -26,11 +26,11 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className="shrink w-80 sm:w-auto sm:order-2 flex items-center justify-center">
-          <img src="/images/logo.png" alt="Logo" className="h-20" />
+        <div className="shrink w-64 sm:w-auto sm:order-2 flex items-center justify-center">
+          <img src="/images/logo.png" alt="Logo" className="h-16 sm:h-20" />
         </div>
         <div className="w-full sm:w-96 order-3 flex justify-center">
-          <div className="flex gap-6">
+          <div className="flex gap-4 sm:gap-6">
             <a className="text-2xl cursor-pointer text-gray-500 transition-colors duration-300 hover:text-gray-700"><ImInstagram /></a>
             <a className="text-2xl cursor-pointer text-gray-500 transition-colors duration-300 hover:text-gray-700"><ImFacebook /></a>
             <a className="text-2xl cursor-pointer text-gray-500 transition-colors duration-300 hover:text-gray-700"><ImTwitter /></a>
