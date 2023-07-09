@@ -26,10 +26,10 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center px-4 sm:px-0">
           <img src="/images/logo.png" alt="Logo" className="h-16 sm:h-20" />
         </div>
-        <div className="flex justify-center sm:w-96">
+        <div className="flex justify-center sm:w-96 sm:pl-4">
           <div className="flex gap-4 sm:gap-6">
             <a className="text-2xl cursor-pointer text-gray-500 transition-colors duration-300 hover:text-gray-700"><ImInstagram /></a>
             <a className="text-2xl cursor-pointer text-gray-500 transition-colors duration-300 hover:text-gray-700"><ImFacebook /></a>

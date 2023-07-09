@@ -1,6 +1,7 @@
 import Format from '../layout/format'
 import Image from 'next/image';
 import Link from 'next/link';
+import { ImArrowRight2 } from "react-icons/im";
 
 export default function Home() {
     return (
@@ -31,8 +32,8 @@ export default function Home() {
                         </p>
                         <br></br>
                         <Link href="/recipes">
-                            <span className="text-orange-600 hover:text-orange-700 pr-1 text-md" href="#">
-                                Browse Recipes {'>'}{'>'}
+                            <span className="text-orange-600 hover:text-orange-700 font-bold pr-1 text-md flex items-center" href="#">
+                                Browse Recipes <ImArrowRight2 className="ml-2" />
                             </span>
                         </Link>
                         <Image
