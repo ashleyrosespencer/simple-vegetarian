@@ -10,7 +10,7 @@ const AllRecipesPage = () => {
       <h1 className="text-2xl font-bold my-4 flex justify-center py-4">ALL RECIPES</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {Posts.map(recipe => (
-          <div key={recipe.id} className="bg-white rounded shadow p-4">
+          <div key={recipe.id} className="bg-gray-100 rounded shadow p-4">
             <div className="relative h-48">
               <Image src={recipe.img} alt={recipe.title} layout="fill" objectFit="cover" className="rounded" />
             </div>

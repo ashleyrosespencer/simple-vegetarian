@@ -11,7 +11,8 @@ export default {
             author:{
                 name: "",
                 img: "",
-                designation: ""
+                designation: "",
+            hasVG: true
             }
         },
         {
@@ -25,7 +26,8 @@ export default {
             author:{
                 name: "",
                 img: "",
-                designation: ""
+                designation: "",
+                hasVG: true
             }
         },
         {
@@ -39,7 +41,8 @@ export default {
             author:{
                 name: "",
                 img: "",
-                designation: ""
+                designation: "",
+                hasVG: false
             }
         }
     ],

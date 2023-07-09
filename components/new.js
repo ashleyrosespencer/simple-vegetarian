@@ -48,7 +48,18 @@ const RecipesSlider = () => {
               {recipe.published || 'Unknown'}
             </span>
           </p>
-          <p className="text-gray-800 mt-2 text-lg">{recipe.description || 'No description available.'}</p>
+          <p className="text-gray-800 mt-2 text-lg py-5">
+            {recipe.description || 'No description available.'}
+          </p>
+          <div className="flex items-center mt-2 text-center md:text-left">
+            <span className="flex items-center justify-center w-8 h-8 bg-orange-500 text-white rounded-full mr-2">
+              VG
+            </span>
+            <span className="flex items-center justify-center w-8 h-8 bg-red-900 text-white rounded-full mr-2">
+              GF
+            </span>
+          </div>
+
         </div>
       </div>
     </div>
@@ -77,8 +88,8 @@ const RecipesSlider = () => {
           </Link>
         </div>
       </div>
-      <h1 className="text-2xl font-bold my-4 flex justify-center hidden md:flex -mt-16">NEW RECIPES</h1>
-      <div className="bg-white rounded shadow p-4">
+      <h1 className="text-2xl font-bold my-2 flex justify-center hidden md:flex -mt-16">NEW RECIPES</h1><br></br>
+      <div className="bg-gray-100 rounded shadow p-4">
         <AliceCarousel
           autoPlay
           autoPlayInterval={3000}
