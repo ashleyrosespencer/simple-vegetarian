@@ -13,13 +13,13 @@ const Navbar = () => {
       <ul className="flex space-x-6 relative z-10">
         <li>
           <Link href="/">
-            <span className="text-gray-600 hover:text-gray-900 cursor-pointer">HOME</span>
+            <span className="text-gray-600 transition-colors duration-300 hover:text-gray-900 cursor-pointer text-xl">HOME</span>
           </Link>
         </li>
         <li className="relative">
         <Link href="/recipes">
           <span
-            className={`text-gray-600 hover:text-gray-900 cursor-pointer ${
+            className={`text-gray-600 transition-colors duration-300 hover:text-gray-900 cursor-pointer text-xl ${
               showDropdown ? 'active' : ''
             }`}
             onClick={toggleDropdown}
@@ -46,7 +46,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link href="/about">
-            <span className="text-gray-600 hover:text-gray-900 cursor-pointer">ABOUT</span>
+            <span className="text-gray-600 transition-colors duration-300 hover:text-gray-900 cursor-pointer text-xl">ABOUT</span>
           </Link>
         </li>
       </ul>

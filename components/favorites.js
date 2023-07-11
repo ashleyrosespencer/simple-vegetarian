@@ -24,7 +24,7 @@ const AllRecipesPage = () => {
               <Image src={recipe.img} alt={recipe.title} layout="fill" objectFit="cover" className="rounded" />
             </div>
             <div className="mt-4">
-              <div className="rounded bg-white p-2">
+              <div className="rounded bg-white p-2 h-full">
                 <h2 className="text-xl font-bold">
                   <a className="font-bold text-xl text-gray-800 hover:text-gray-600" href={`/recipes/${recipe.id}`}>
                     {recipe.title}

@@ -39,7 +39,9 @@ export default function Recipe() {
               </p>
               <div className="py-10 justify-center">
                 <div className="flex justify-center"></div>
-                <Image src={recipe.img} width={900} height={600} alt="" />
+                <div className="relative h-0" style={{ paddingBottom: '66.66%' }}>
+                  <Image src={recipe.img} layout="responsive" width={900} height={600} alt="" />
+                </div>
               </div>
               <div className="content text-gray-600 text-lg flex-col gap-4 pb-10 border-b-2 border-gray-500">
                 <p>{recipe.description}</p>

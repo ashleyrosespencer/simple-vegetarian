@@ -14,10 +14,10 @@ const RecipesSlider = () => {
   };
 
   const renderRecipeSlide = (recipe) => (
-    <div key={recipe.id}>
+    <div key={recipe.id} className="w-full mb-4 md:mb-0">
       <div className="bg-gray-100 rounded p-4">
         <div className="flex flex-col md:flex-row">
-          <div className="w-full md:w-1/2 mb-4 md:mb-0 pr-4">
+          <div className="w-full md:w-1/2 mb-4 md:mb-0">
             <div className="relative h-64 md:h-full">
               <Link href={`/recipes/${recipe.id}`}>
                 <span className="absolute inset-0">
@@ -85,7 +85,7 @@ const RecipesSlider = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 md:px-8 pt-4">
+    <div className="container mx-auto px-0 md:px-4 pt-4">
       <div className="flex items-center justify-between mb-4 py-2 hidden md:flex">
         <div className="w-12 h-12 mr-2">
           <Image
